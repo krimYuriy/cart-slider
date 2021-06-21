@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background: url('https://on-desktop.com/ru/images/wp.php?path=/wps/Backgrounds_Beautiful_background_035523_.jpg&wp=17') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  color: #fff;
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  background: center/cover no-repeat;
+  margin: 10px;
+  cursor: pointer;
+  flex: 1;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity .3s ease .6s;
+}
